@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WFScandit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Latest version of Scandit"
 
   s.description  = <<-DESC
@@ -53,12 +53,12 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "CoreText", "OpenGLES", "MessageUI", "CoreVideo", "CoreGraphics", "AudioToolbox", "AVFoundation", "CoreMedia", "QuartzCore", "SystemConfiguration", "MediaPlayer"
 
   s.vendored_frameworks = "ScanditBarcodeScanner.framework"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries = "c++", "iconv", "z"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
